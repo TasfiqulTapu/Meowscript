@@ -1,0 +1,27 @@
+{
+  "name": "meowscript",
+  "version": "0.0.1",
+  "description": "Meowscript is an esoteric programming language with cat emojis 🐈🐈🐈",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TasfiqulTapu/Meowscript.git"
+  },
+  "keywords": [
+    "meow"
+  ],
+  "author": "Tasfiqul Tapu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TasfiqulTapu/Meowscript/issues"
+  },
+  "homepage": "https://github.com/TasfiqulTapu/Meowscript#readme",
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  }
+}
