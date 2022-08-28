@@ -8,7 +8,7 @@ if(process.argv.length < 3){
 let code = fs.readFileSync(process.argv[2], 'utf8')
 let codeArray :string[] = [...code]
 
-let compiler = {
+let iter = {
     stack: new Uint8Array(1024),
     stackPointer: 0,
     codePointer: 0,
@@ -16,20 +16,20 @@ let compiler = {
 
 // console.log(codeArray)
 
-while(compiler.codePointer < codeArray.length){
-    let currentChar = codeArray[compiler.codePointer]
+while(iter.codePointer < codeArray.length){
+    let currentChar = codeArray[iter.codePointer]
     switch (currentChar){
         case '😻':
-            compiler.stack[compiler.stackPointer]++
+            iter.stack[iter.stackPointer]++
             break;
         case '😾':
-            compiler.stack[compiler.stackPointer]--
+            iter.stack[iter.stackPointer]--
             break;
         case '🙀':
-            process.stdout.write(String.fromCharCode(compiler.stack[compiler.stackPointer]))
+            process.stdout.write(String.fromCharCode(iter.stack[iter.stackPointer]))
             break;
     }
-    compiler.codePointer++
+    iter.codePointer++
 }
 
 process.stdout.write('\n')
