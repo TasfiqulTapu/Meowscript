@@ -19,7 +19,7 @@ let iter = {
 while(iter.codePointer < codeArray.length){
     let currentChar = codeArray[iter.codePointer]
     switch (currentChar){
-        case '😻':
+        case '😺':
             iter.stack[iter.stackPointer]++
             break;
         case '😾':
