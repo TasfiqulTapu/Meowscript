@@ -22,11 +22,25 @@ while(iter.codePointer < codeArray.length){
         case '😺':
             iter.stack[iter.stackPointer]++
             break;
-        case '😾':
+        case '😸':
             iter.stack[iter.stackPointer]--
             break;
         case '🙀':
             process.stdout.write(String.fromCharCode(iter.stack[iter.stackPointer]))
+            break;
+        case '😾':
+            if(iter.stackPointer !== 0){
+                iter.codePointer--
+            }else{
+                iter.stackPointer = iter.stack.length - 1
+            }
+            break;
+        case '😽':
+            if(iter.stackPointer == iter.stack.length - 1){
+                iter.codePointer = 0
+            }else{
+                iter.stackPointer++
+            }
             break;
     }
     iter.codePointer++
