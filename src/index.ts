@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-console.log("Running with the power of 🐈 ")
+console.log("Running with the power of 🐈🐈‍⬛ ")
 if(process.argv.length < 3){
     console.log("Usage: node index.js <file>")
     process.exit(1)
@@ -14,7 +14,6 @@ let iter = {
     codePointer: 0,
 }
 
-// console.log(codeArray)
 
 while(iter.codePointer < codeArray.length){
     let currentChar = codeArray[iter.codePointer]
@@ -30,7 +29,7 @@ while(iter.codePointer < codeArray.length){
             break;
         case '😾':
             if(iter.stackPointer !== 0){
-                iter.codePointer--
+                iter.stackPointer--
             }else{
                 iter.stackPointer = iter.stack.length - 1
             }
