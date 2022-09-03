@@ -17,11 +17,17 @@ try{
     process.exit(1)
 }
 let codeArray :string[] = [...code]
-
-let iter = {
+interface InterpretterOptions{
+    stack: Uint8Array,
+    stackPointer: number,
+    codePointer: number,
+    loopBeginIndex: number | undefined,
+}
+let iter : InterpretterOptions = {
     stack: new Uint8Array(1024),
     stackPointer: 0,
     codePointer: 0,
+    loopBeginIndex: undefined, 
 }
 
 
@@ -49,6 +55,14 @@ while(iter.codePointer < codeArray.length){
                 iter.codePointer = 0
             }else{
                 iter.stackPointer++
+            }
+            break;
+        case '😿':
+                iter.loopBeginIndex = iter.codePointer;
+            break;
+        case '😹':
+            if(iter.loopBeginIndex !== undefined && iter.stack[iter.stackPointer] !== 0){
+                iter.codePointer = iter.loopBeginIndex
             }
             break;
     }

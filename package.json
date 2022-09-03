@@ -1,6 +1,6 @@
 {
   "name": "meowscript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Meowscript is an esoteric programming language with cat emojis 🐈🐈🐈",
   "main": "src/index.js",
   "scripts": {
