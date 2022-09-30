@@ -1,6 +1,10 @@
 # Meowscript
 Meowscript is an esoteric programming language with cat emojis 🐈🐈🐈
 
+A turing complete, stackbased, interpretted, esolang that uses only cat emojis to run. Meowscript is based off of braifuck, a popular eslong that defined the entire genre. Meowscript can(*not yet) run any and all brainfuck code while also providing extra functionality.
+
+## Operations
+
 | operation | emoji | md name |
 |-----------|-------|---------|
 | increment | 😺 | smiley_cat |
@@ -11,3 +15,25 @@ Meowscript is an esoteric programming language with cat emojis 🐈🐈🐈
 | loop begin | 😿 | crying_cat |
 | loop check/end | 😹 | joy_cat |
 | input | 😻 | heart_eyes_cat |
+
+## examples
+
+```meows
+Hi! in meowscript
+😺😺😺😺😺😺😺😺😺😺
+😺😺😺😺😺😺😺😺😺😺
+😺😺😺😺😺😺😺😺😺😺
+😺😺😺😺😺😺😺😺😺😺
+😺😺😺😺😺😺😺😺😺😺
+😺😺😺😺😺😺😺😺😺😺
+😺😺😺😺😺😺😺😺😺😺
+😺😺
+🙀
+😺
+🙀
+😸😸😸😸😸😸😸😸😸😸
+😸😸😸😸😸😸😸😸😸😸
+😸😸😸😸😸😸😸😸😸😸
+😸😸😸😸😸😸😸😸😸😸
+🙀
+```

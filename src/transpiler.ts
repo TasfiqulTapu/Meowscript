@@ -13,7 +13,7 @@ export function transpile (code:string, options:Opt) {
     .replace(/\[/g, '😿')
     .replace(/\]/g, '😹')
     if(options.strict && meow.includes(',')){
-        throw new Error(`Unallowed character ',' at ${code.indexOf(',')} strict mode; meowscript@0.0.4`)
+        throw new Error(`Unallowed character ',' at ${code.indexOf(',')} strict mode; meowscript@0.0.3`)
     }
     return meow
 }
