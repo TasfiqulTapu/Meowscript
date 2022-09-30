@@ -4,7 +4,7 @@ import * as fs from 'fs'
 console.log("Running with the power of 🐈")
 if(process.argv.length < 3){
     console.log("No file specified")
-    console.log("Usage: node index.js <file>")
+    console.log("Usage: meows <file>")
     process.exit(1)
 }
 
@@ -13,8 +13,7 @@ try{
     code = fs.readFileSync(process.argv[2], 'utf8')
 }catch(e){
     console.log("Error reading file")
-    console.log(e)
-    process.exit(1)
+    process.exit()
 }
 let codeArray :string[] = [...code]
 interface InterpretterOptions{
