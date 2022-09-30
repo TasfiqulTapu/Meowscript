@@ -10,3 +10,4 @@ Meowscript is an esoteric programming language with cat emojis 🐈🐈🐈
 | pointer left | 😾 | pounting_cat |
 | loop begin | 😿 | crying_cat |
 | loop check/end | 😹 | joy_cat |
+| input | 😻 | heart_eyes_cat |
