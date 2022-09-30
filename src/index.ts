@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
-import * as fs from 'fs'
+import * as fs from 'fs';
+import { transpile } from './transpiler';
 console.log("Running with the power of 🐈")
 if(process.argv.length < 3){
     console.log("No file specified")
@@ -11,8 +12,11 @@ if(process.argv.length < 3){
 let code;
 try{
     code = fs.readFileSync(process.argv[2], 'utf8')
+    if(process.argv[2].endsWith('.bf')){
+        code = transpile(code, {strict: true})
+    }
 }catch(e){
-    console.log("Error reading file")
+    console.log("Error reading file. Are you sure that file exists?")
     process.exit()
 }
 let codeArray :string[] = [...code]
@@ -64,10 +68,15 @@ while(iter.codePointer < codeArray.length){
                 iter.codePointer = iter.loopBeginIndex
             }
             break;
+        case '😻':
+            // not implemented
+            // need to find a way to get input
+
+            break;
     }
     iter.codePointer++
 }
 
 process.stdout.write('\n')
-
+process.exit(0)
 
