@@ -16,6 +16,18 @@ A turing complete, stackbased, interpretted, esolang that uses only cat emojis t
 | loop check/end | 😹 | joy_cat |
 | input | 😻 | heart_eyes_cat |
 
+## Quarks 'n Features 
+Meowscript does not care about non-cat-emoji characters.
+```meows
+😺😺😺😺😺😺😺😺😺😺
+Meaning you can have
+😺😺😺😺😺😺😺😺😺😺
+random characters in
+😺😺😺😺😺😺😺😺😺😺
+between and it still works
+😺😺😺
+```
+
 ## examples
 
 ```meows
@@ -27,10 +39,7 @@ Hi! in meowscript
 😺😺😺😺😺😺😺😺😺😺
 😺😺😺😺😺😺😺😺😺😺
 😺😺😺😺😺😺😺😺😺😺
-😺😺
-🙀
-😺
-🙀
+😺😺🙀😺🙀
 😸😸😸😸😸😸😸😸😸😸
 😸😸😸😸😸😸😸😸😸😸
 😸😸😸😸😸😸😸😸😸😸
