@@ -3,6 +3,12 @@ Meowscript is an esoteric programming language with cat emojis 🐈🐈🐈
 
 A turing complete, stack-based, interpreted, esolang that uses only cat emojis to run. Meowscript is based on brainfuck, a popular esolang that defined the entire genre. Meowscript can(*not yet) run any brainfuck code while also providing extra functionality.
 
+## Installation
+Install meowscript from npm
+```
+npm i -g meowscript
+```
+
 ## Operations
 
 | operation | emoji | md name |
